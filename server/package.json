@@ -1,0 +1,36 @@
+{
+  "name": "sabbed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nexus dev",
+    "build": "nexus build",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "globals": {
+      "ts-jest": {
+        "diagnostics": {
+          "warnOnly": true
+        }
+      }
+    },
+    "testEnvironment": "./tests/nexus-test-environment.js"
+  },
+  "author": "KBuild",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "nanoid": "^3.1.12",
+    "nexus": "^0.26.1",
+    "nexus-plugin-prisma": "^0.18.2",
+    "pg": "^8.3.3"
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.7.1",
+    "@types/jest": "^26.0.13",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0"
+  }
+}
